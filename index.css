@@ -1,0 +1,222 @@
+main {
+  width: 70%;
+  margin-left: 300px;
+  position: absolute;
+  top: 0;
+}
+
+header {
+  background-color: #e7d9bf;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 5px;
+  width: 230px;
+  height: 350px;
+}
+
+header ul {
+  background-color: #f6f6d7;
+  border: 5px solid #f6f6d7;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 18pt;
+  width: 150px;
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  width: 70%;
+  margin-left: -4%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding-right: 30px;
+  border: 10px solid black;
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+header li {
+  margin-left: -20%;
+}
+
+nav li {
+  font-size: 16pt;
+  color: white;
+}
+
+nav li:hover{
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.fav {
+  width: 180px;
+  height: 150px;
+}
+
+
+#author {
+  width: 150px;
+  height: 150px;
+  border: 20px solid #ecc06f;
+  border-bottom: 40px solid #f3cc82;
+  margin-left: -10px;
+  display: block;
+}
+
+#email span {
+  font-size: 10pt;
+}
+
+#mail {
+  width: 30px;
+  height: 20px;
+  background-color: orange;
+}
+
+#link {
+  width: 35px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#git {
+  position: relative;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#contact {
+  font-size: 15pt;
+  position: relative;
+  margin-top: -50px;
+}
+
+#intro p {
+  width: 700px;
+}
+
+#motivation img {
+  height: 180px;
+  width: 300px;
+  float: right;
+}
+
+#motivation p {
+  margin-top: 35px;
+}
+
+#favorite {
+  margin-top: 50px;
+}
+
+#initial {
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 690px;
+  width: 1290px;
+  color: white;
+}
+
+#songlist {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#top-news {
+  position: absolute;
+  left: 20px;
+}
+
+@keyframes arrowcolor {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: purple;
+  }
+}
+
+#initial div {
+  width: 35px;
+  height: 35px;
+  animation: 2s infinite alternate arrowcolor;
+  border-style: solid;
+  border-width: 5px 0 0 5px;
+  background-color: black;
+  transform: rotate(225deg);
+  border-color: white;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+}
+
+#initial div:hover {
+  cursor: pointer;
+}
+
+@keyframes appear {
+  0% {opacity: 0;}
+  25% {opacity: 25%;}
+  50% {opacity: 50%;}
+  75% {opacity: 75%;}
+  100% {opacity: 100%;}
+}
+
+#albumn {
+  position: fixed;
+  top: 120px;
+  left: 50px;
+  animation: 8s forwards appear;
+}
+
+#albumn img {
+  width: 800px;
+  border: 5px solid white;
+  border-radius: 5%;
+}
+
+/*#c2eff2 #91f0f6 #34e9f4 #17e4f0*/
+@keyframes colorshift {
+ 0% {color: white;}
+ 25% {color: #c2eff2;}
+ 50% {color: #91f0f6;}
+ 75% {color: #34e9f4;}
+ 100% {color: #17e4f0;}
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 100px;
+  }
+}
+
+#welcome {
+  animation: 3s infinite alternate colorshift, 5s forwards slidein;
+  font-size: 30pt;
+}
